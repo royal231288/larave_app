@@ -173,3 +173,8 @@ ls -ld /home /home/ubuntu /home/ubuntu/laravel_app
 ```
 expected output: 
 ```bash
+drwxr-xr-x  3 root   root    4096 Jan 17 12:38 /home
+drwxr-xr-x  7 ubuntu ubuntu  4096 Jan 17 13:32 /home/ubuntu
+drwxr-xr-x 13 ubuntu laravel 4096 Jan 17 13:50 /home/ubuntu/laravel_app
+```
+
