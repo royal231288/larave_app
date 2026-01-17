@@ -85,7 +85,7 @@ sudo chown -R ubuntu:laravel storage bootstrap/cache  # Writable dirs owned by d
 Set permission
 ```bash
 sudo chmod 755 /home          # /home should be globally readable & traversable
-sudo chmod 750 /home/ubuntu   # Keep private for ubuntu & group, www-data in group 'laravel' can traverse
+sudo chmod 755 /home/ubuntu   # Keep private for ubuntu & group, www-data in group 'laravel' can traverse
 
 # Directories: owner+group read/write/execute
 sudo find storage bootstrap/cache -type d -exec chmod 775 {} \;
@@ -167,3 +167,9 @@ Remove default configuration
 ```bash 
 sudo rm /etc/nginx/sites-enabled/default
 ```
+checking permission 
+```bash
+ls -ld /home /home/ubuntu /home/ubuntu/laravel_app
+```
+expected output: 
+```bash
